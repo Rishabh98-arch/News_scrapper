@@ -172,7 +172,7 @@ else:
                 if article.get("image_url"):
                     col1, col2 = st.columns([1, 2])
                     with col1:
-                        st.image(article["image_url"], use_column_width='always')
+                        st.image(article["image_url"], use_container_width='always')
                     with col2:
                         display_article_text(article)
                 else:
